@@ -1,24 +1,39 @@
+<!-- MINI PROJECT - Funland -->
+<!-- CODE AUTHOR
+1. Aanchal Gupta
+2. Abhishek Kumar
+3. Bhavya Jindal -->
+
+<!-- Start of Code -->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
+  <!-- Title of website -->
   <title>Funland | Unlimited Fun</title>
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Favicon -->
   <link rel="icon" href="favicon.ico">
+  <!-- Font kit -->
   <script src="https://kit.fontawesome.com/e1d34fac90.js" crossorigin="anonymous"></script>
+  <!-- BootstrapCDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Internal Style -->
+  <!-- Style for wave -->
   <style media="screen">
-    *{
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    section .wave{
+    section .wave {
       position: absolute;
       bottom: 0;
       left: 0;
@@ -29,7 +44,7 @@
       overflow: hidden;
     }
 
-    section .wave.wave1{
+    section .wave.wave1 {
       animation: animate-wave-1 10s linear infinite;
       z-index: 1000;
       opacity: 1;
@@ -37,7 +52,7 @@
       bottom: 0;
     }
 
-    section .wave.wave2{
+    section .wave.wave2 {
       animation: animate-wave-2 5s linear infinite;
       z-index: 999;
       opacity: 0.5;
@@ -45,7 +60,7 @@
       bottom: 10px;
     }
 
-    section .wave.wave3{
+    section .wave.wave3 {
       animation: animate-wave-3 10s linear infinite;
       z-index: 998;
       opacity: 0.2;
@@ -53,7 +68,7 @@
       bottom: 15px;
     }
 
-    section .wave.wave4{
+    section .wave.wave4 {
       animation: animate-wave-4 2s linear infinite;
       z-index: 997;
       opacity: 0.7;
@@ -62,63 +77,64 @@
     }
 
     @keyframes animate-wave-1 {
-      0%{
-        background-position-x:0;
+      0% {
+        background-position-x: 0;
       }
-      100%{
-        background-position-x:1600px;
+
+      100% {
+        background-position-x: 1600px;
       }
     }
 
     @keyframes animate-wave-2 {
-      0%{
-        background-position-x:0;
+      0% {
+        background-position-x: 0;
       }
-      100%{
-        background-position-x:-1600px;
+
+      100% {
+        background-position-x: -1600px;
       }
     }
 
     @keyframes animate-wave-3 {
-      0%{
-        background-position-x:0;
+      0% {
+        background-position-x: 0;
       }
-      100%{
-        background-position-x:1600px;
+
+      100% {
+        background-position-x: 1600px;
       }
     }
 
     @keyframes animate-wave-4 {
-      0%{
-        background-position-x:0;
+      0% {
+        background-position-x: 0;
       }
-      100%{
-        background-position-x:-1600px;
+
+      100% {
+        background-position-x: -1600px;
       }
     }
-
   </style>
 
 </head>
 
 <body>
 
-  <section id="title">
+  <!-- Upper Section -->
 
+  <section id="title">
 
     <!-- Nav Bar -->
 
-
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-     <a class="navbar-brand" href="index.html">
-    <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top symbols" alt="" loading="lazy">
-    <em>Funland</em>
-     </a>
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top symbols" alt="" loading="lazy">
+        <em>Funland</em>
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-
       </button>
-
       <div class="collapse navbar-collapse nav-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
@@ -140,29 +156,17 @@
             <a class="nav-link" href="#footer">Contact us</a>
           </li>
         </ul>
-
       </div>
-
-
-
     </nav>
 
-
-
-    <!-- Title -->
-
-
-
+    <!-- Front Background Image -->
 
     <div class="front" style="background-image:url(images/3.jpg);  height:540px;">
-      <!-- <div class="front" style="background-color: #ff4c68; height:540px;"> -->
-      <!-- <div class="front" style="background-image:url(https://cdn.pixabay.com/photo/2014/07/09/12/17/live-concert-388160_960_720.jpg);  height:500px;"> -->
       <div class="text">
         <h1 style="font-size:4.5rem;   font-family: 'Montserrat-Bold' , cursive;" class="symbol">Welcome to Funland</h1>
         <h5 style="padding-left: 19rem; padding-right: 19rem;">Entertainment is anything that gives you enjoyment. Almost all of us need some sort of entertainments...</h5>
       </div>
     </div>
-
 
   </section>
 
@@ -194,72 +198,68 @@
 
   <!-- SONGS -->
 
-
-
- <section id="songs" style="background-image:url(images/headphone.jpg); background-size: cover; background-position: center; height:auto; width:100%; padding: 2% 5%;">
+  <section id="songs" style="background-image:url(images/headphone.jpg); background-size: cover; background-position: center; height:auto; width:100%; padding: 2% 5%;">
     <h2 style="font-size: 4rem; color:#ff000069;" class="symbo">SONGS</h2>
+    <!-- Carousel -->
     <div id="testimonial-carousel" class="carousel slide" data-ride="carousel" data-interval="3000">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <!-- <h2 style="font-size: 4rem;">SONGS</h2> -->
           <div class="row">
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 5%;">
-    <a href="arjits.html"><img class="singers-photo" src="images\arjit.jpeg" alt="Arjit Singh"></a>
-              <h3>Arjit Singh</h3>
+              <a href="arjits.html"><img class="singers-photo" src="images\arjit.jpeg" alt="Arjit Singh"></a>
+              <h3 style="color:#343a40;">Arjit Singh</h3>
             </div>
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 5%;">
               <a href="honeysingh.html"><img class="singers-photo" src="images\honey1.jpeg" alt="Honey Singh"></a>
-              <h3>Honey Singh</h3>
+              <h3 style="color:#343a40;">Honey Singh</h3>
             </div>
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 5%;">
               <a href="kumarshanu.html"><img class="singers-photo" src="images\shanu.jpeg" alt="Kumar Sanu"></a>
-              <h3>Kumar Sanu</h3>
+              <h3 style="color:#343a40;">Kumar Sanu</h3>
             </div>
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 5%;">
               <a href="jusstin.html"><img class="singers-photo" src="images\justin.jpeg" alt="Justin Bieber"></a>
-              <h3>Justin Bieber</h3>
+              <h3 style="color:#343a40;">Justin Bieber</h3>
             </div>
           </div>
         </div>
         <div class="carousel-item">
-          <!-- <h2 style="font-size: 4rem;">SONGS</h2> -->
           <div class="row">
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 5%;">
               <a href="badshah.html"><img class="singers-photo" src="images\badshaah.jpeg" alt="Badshaah"></a>
-              <h3>Badshaah</h3>
+              <h3 style="color:#343a40;">Badshaah</h3>
             </div>
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 5%;">
-               <a href="neeha.html"><img class="singers-photo" src="images\Neha.jpeg" alt="Neha kakkar"></a>
-              <h3>Neha kakkar</h3>
+              <a href="neeha.html"><img class="singers-photo" src="images\Neha.jpeg" alt="Neha kakkar"></a>
+              <h3 style="color:#343a40;">Neha kakkar</h3>
             </div>
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 5%;">
-               <a href="kishore.html"><img class="singers-photo" src="images\Kishore.jpg" alt="Kishore Kumar"></a>
-              <h3>Kishore Kumar</h3>
+              <a href="kishore.html"><img class="singers-photo" src="images\Kishore.jpg" alt="Kishore Kumar"></a>
+              <h3 style="color:#343a40;">Kishore Kumar</h3>
             </div>
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 5%;">
-               <a href="selena.html"><img class="singers-photo" src="images\selena.jpeg" alt="Selena Gomez"></a>
-              <h3>Selena Gomez</h3>
+              <a href="selena.html"><img class="singers-photo" src="images\selena.jpeg" alt="Selena Gomez"></a>
+              <h3 style="color:#343a40;">Selena Gomez</h3>
             </div>
           </div>
         </div>
         <div class="carousel-item">
-          <!-- <h2 style="font-size: 4rem;">SONGS</h2> -->
           <div class="row">
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 5%;">
-               <a href="armaan.html"><img class="singers-photo" src="images\armaan.jpeg" alt="Armaan malik"></a>
-              <h3>Armaan Malik</h3>
+              <a href="armaan.html"><img class="singers-photo" src="images\armaan.jpeg" alt="Armaan malik"></a>
+              <h3 style="color:#343a40;">Armaan Malik</h3>
             </div>
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 5%;">
-               <a href="mikasingh.html"><img class="singers-photo" src="images\mica.jpeg" alt="Mika Singh"></a>
-              <h3>Mika Singh</h3>
+              <a href="mikasingh.html"><img class="singers-photo" src="images\mica.jpeg" alt="Mika Singh"></a>
+              <h3 style="color:#343a40;">Mika Singh</h3>
             </div>
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 5%;">
-               <a href="chainsmokers.html"><img class="singers-photo" src="images\chainsmokers.jpeg" alt="The chainsmokers"></a>
-              <h3>Chainsmokers</h3>
+              <a href="chainsmokers.html"><img class="singers-photo" src="images\chainsmokers.jpeg" alt="The chainsmokers"></a>
+              <h3 style="color:#343a40;">Chainsmokers</h3>
             </div>
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 5%;">
-               <a href="alanwalker.html"><img class="singers-photo" src="images\alan.jpeg" alt="alan walker"></a>
-              <h3>Alan Walker</h3>
+              <a href="alanwalker.html"><img class="singers-photo" src="images\alan.jpeg" alt="alan walker"></a>
+              <h3 style="color:#343a40;">Alan Walker</h3>
             </div>
           </div>
         </div>
@@ -276,80 +276,65 @@
     </div>
   </section>
 
+  <!-- MOVIES -->
 
-   <!-- MOVIES -->
-
-
-
- <section id="movies" style="background-image:url(images/film.jpeg); background-size: cover; background-position: center; height:auto; width:100%; padding: 2% 5%;">
-       <h2 style="font-size: 4rem;" class="symbo">MOVIES</h2>
-        <div id="testimonial-carousl" class="carousel slide" data-ride="carousel" data-interval="3000">
-          <div class="carousel-inner">
+  <section id="movies" style="background-image:url(images/film.jpeg); background-size: cover; background-position: center; height:auto; width:100%; padding: 2% 5%;">
+    <h2 style="font-size: 4rem;" class="symbo">MOVIES</h2>
+    <!-- Carousel -->
+    <div id="testimonial-carousl" class="carousel slide" data-ride="carousel" data-interval="3000">
+      <div class="carousel-inner">
         <div class="carousel-item active">
-          <!-- <h2 style="font-size: 4rem;">SONGS</h2> -->
           <div class="row">
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 4%;">
               <a href="https://youtu.be/ckTBVvfzfRY"><img class="movies-photo" src="images\3idiots.jpg" alt=""></a>
-
             </div>
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 4%;">
               <a href="https://youtu.be/fV9l4j_AENA"><img class="movies-photo" src="images\udta.jpg" alt=""></a>
-
             </div>
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 4%;">
               <a href="https://youtu.be/K9wbLvQDBbE"><img class="movies-photo" src="images\msdhoni.jpg" alt=""></a>
-
             </div>
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 4%;">
               <a href="https://youtu.be/NYeS7Wg9qmY"><img class="movies-photo" src="images\taare.jpg" alt=""></a>
-
             </div>
           </div>
         </div>
         <div class="carousel-item">
-          <!-- <h2 style="font-size: 4rem;">SONGS</h2> -->
           <div class="row">
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 4%;">
               <a href="https://youtu.be/U4hNu0H4CYU"><img class="movies-photo" src="images\bahu2.jpg" alt=""></a>
-
             </div>
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 4%;">
-               <a href="https://youtu.be/UMadfgag82Q"><img class="movies-photo" src="images\bahu1.jpg" alt=""></a>
-
+              <a href="https://youtu.be/UMadfgag82Q"><img class="movies-photo" src="images\bahu1.jpg" alt=""></a>
             </div>
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 4%;">
-               <a href="https://youtu.be/RD3uBy_9OMo"><img class="movies-photo" src="images\housefull4.jpg" alt=""></a>
-
+              <a href="https://youtu.be/RD3uBy_9OMo"><img class="movies-photo" src="images\housefull4.jpg" alt=""></a>
             </div>
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 4%;">
-               <a href="https://youtu.be/HddTZmbNM3A"><img class="movies-photo" src="images\student1.jpg" alt=""></a>
-
+              <a href="https://youtu.be/HddTZmbNM3A"><img class="movies-photo" src="images\student1.jpg" alt=""></a>
             </div>
           </div>
         </div>
         <div class="carousel-item">
-          <!-- <h2 style="font-size: 4rem;">SONGS</h2> -->
           <div class="row">
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 4%;">
-               <a href="https://youtu.be/wsbvrgvHeSI"><img class="movies-photo" src="images\abcd2.jpg" alt=""></a>
-
+              <a href="https://youtu.be/wsbvrgvHeSI"><img class="movies-photo" src="images\abcd2.jpg" alt=""></a>
             </div>
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 4%;">
-               <a href="https://youtu.be/75M5Nfm4ovo"><img class="movies-photo" src="images\kick.jpg" alt=""></a>
-
+              <a href="https://youtu.be/75M5Nfm4ovo"><img class="movies-photo" src="images\kick.jpg" alt=""></a>
             </div>
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 4%;">
-               <a href="https://youtu.be/qPXJQw2dutE"><img class="movies-photo" src="images\mangal.jpg" alt=""></a>
-
+              <a href="https://youtu.be/qPXJQw2dutE"><img class="movies-photo" src="images\mangal.jpg" alt=""></a>
             </div>
             <div class="feature-box col-lg-3 col-sm-6" style="padding: 1% 4%;">
-               <a href="https://youtu.be/6tK6hKWSnfQ"><img class="movies-photo" src="images\baaghi2.jpg" alt=""></a>
-
+              <a href="https://youtu.be/6tK6hKWSnfQ"><img class="movies-photo" src="images\baaghi2.jpg" alt=""></a>
             </div>
           </div>
         </div>
-
       </div>
+
+      <!-- Forward and Previous Button in Carousel -->
+
       <a class="carousel-control-prev" href="#testimonial-carousl" role="button" data-slide="prev" style="width:40px;">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -361,26 +346,24 @@
     </div>
   </section>
 
+  <!-- Footer -->
 
-
-              <!-- Footer -->
-
-            <footer class="white-section" id="footer">
-              <div class="container-fluid">
-                <section>
-                  <div class="wave wave1"></div>
-                  <div class="wave wave2"></div>
-                  <div class="wave wave3"></div>
-                  <div class="wave wave4"></div>
-                </section>
-                <i class="social-icon fab fa-facebook-f symbols"></i>
-                <i class="social-icon fab fa-twitter symbols"></i>
-                <i class="social-icon fab fa-instagram symbols"></i>
-                <i class="social-icon fas fa-envelope symbols"></i>
-                <p>© Copyright 2020 Funland</p>
-                <p>Terms | privacy</p>
-              </div>
-            </footer>
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+      <section>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+      </section>
+      <i class="social-icon fab fa-facebook-f symbols"></i>
+      <i class="social-icon fab fa-twitter symbols"></i>
+      <i class="social-icon fab fa-instagram symbols"></i>
+      <i class="social-icon fas fa-envelope symbols"></i>
+      <p>© Copyright 2020 Funland</p>
+      <p>Terms | privacy</p>
+    </div>
+  </footer>
 </body>
 
 </html>
